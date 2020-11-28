@@ -1,0 +1,200 @@
+<!-- getinvolved.html
+Author: Kateri Lalicker, HTeamML
+Comp20 Fall 2020 Midterm -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Barnum Humane Society</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="StyleSheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="keywords" content="foster, adopt, animals, humane society, animal aid, cats, dogs">
+<style>
+    .errMsg {color: #D20E11;
+        border: solid 1px #d20e11;
+        display:none;
+        padding: 1px 15px;
+        margin-left:7%;
+    }
+    form {padding-left:4%}
+    input {padding:2px}
+    p {padding:3px;
+        font-size:17px;
+        margin-left:7%;
+    }
+
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+      #dropdown {display: inline;}
+      .mobileHide {display: none;}
+</style>
+<script type="text/javascript">
+moneyList = ["$1", "$2","$5","$10","$20","$50"];
+function donateMsg()
+{
+    name = document.forms[0].name.value;
+    donation = "";
+    for (i = 0; i < moneyList.length; i++)
+    {
+        with(document.forms[0])
+        {
+            if (amount[i].checked)
+            {
+                donation = amount[i].value;
+                break;
+            }
+        }
+    }
+    if (donation == "")
+        donation = "$" +  document.forms[0].money.value;
+    alert ("Thank you, " + name + ", for your generous " + donation +
+        " donation! You can expect a call from us in 1-3 business days on" +
+        " a secure line where we will ask for payment details.");
+}
+function validate()
+{
+    err = false;
+    document.getElementById("errName").style.display = "none";
+    document.getElementById("errEmail").style.display = "none";
+    with (document.contact)
+    {
+        if (name.value=="")
+        {
+            document.getElementById("errName").style.display = "inline";
+            name.focus();
+            err = true;
+        }
+        if (email.value=="")
+        {
+            document.getElementById("errEmail").style.display = "inline";
+            email.focus();
+            err = true;
+        }
+    }
+    if (!err)
+        donateMsg();
+    return !err;
+}
+window.onload = function ()
+{
+    dropdown = document.getElementById("dropdown");
+    dropdown_links = document.getElementById("dropdown-links");
+    dropdown.onclick = function ()
+    {
+        if (dropdown_links.style.display == "block"){
+            dropdown_links.style.display = "none"
+        }
+        else{
+            dropdown_links.style.display = "block"
+        }
+        return false;
+    }
+}
+</script>
+</head>
+<header> <center> <a class = "logo" href="index.html"> <img id = "logo" src="FinalLogo.png"> </a> </center> </header>
+<nav>
+    <!-- Mobile -->
+    <right>
+        <a id = "dropdown">
+            <i style = "font-size: 25px" class = "fa fa-bars"></i>
+        </a>
+    </right>
+    <!-- Mobile -->
+    <center>
+        <div class = "mobileHide">
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About Us </a>
+            <a href="adopt.html"> Adopt </a>
+            <a href="foster.html"> Foster </a>
+            <a href="animalaid.html"> Animal Aid </a>
+            <a href="getinvolved.html" class="currpage"> Get Involved </a>
+            <a href="contact.html"> Contact Us </a>
+        </div>
+    </center>
+</nav>
+
+<body>
+
+    <!-- Mobile -->
+<div id = "dropdown-links" class="dropdown-links">
+    <a href="index.html"> Home </a>
+    <a href="about.html"> About Us </a>
+    <a href="adopt.html"> Adopt </a>
+    <a href="foster.html" class="currpage"> Foster </a>
+    <a href="animalaid.html"> Animal Aid </a>
+    <a href="getinvolved.html"> Get Involved </a>
+    <a href="contact.html"> Contact Us </a>
+</div>
+<h1>Get Involved</h1>
+<div class = "about_contain">
+    <div class= "about_inside">
+<h3>Your time is just as valuable to us as your money!<br>The Barnum Humane
+Society understands that not everyone can contribute in the same way, and wants
+you to know that even if you don't wish to donate, you can still help us make a
+difference in the lives of pets everywhere by volunteering your time and
+assistance instead. <br>Volunteer applications are available at all of our pet
+shelter and rescue locations.<br>Please speak with an associate to begin changing
+the lives of animals today!</h3>
+</div>
+</div>
+<h1>Donate Today</h1>
+<div class = "about_contain">
+    <div class= "about_inside">
+<h3>Please give now to help animals in need!<br>Your contributions help us do
+everything from aiding animal rescue missions to buying food and supplies
+for all of our resident adoptees!<br>Every cent is dedicated to protecting the
+safety and wellbeing of our animals.</h3>
+</div>
+</div>
+<form name="contact" onsubmit="return validate()">
+    <p>Full Name: <input type="text" name="name" value=""></p>
+    <div id="errName" class="errMsg">Tell us your full name!</div>
+    <p>Would you like this donation to remain anonymous?
+    <input type="checkbox" name="anon"></p>
+    <p>Email: <input type="text" name="email" value=""></p>
+    <div id="errEmail" class="errMsg">Please give us a valid email!</div>
+    <p>Phone Number (Home): <input type="text" name="phone"
+        value=""></p>
+    <p>Phone Number (Work): <input type="text" name="phone"
+        value=""></p>
+    <p>Phone Number (Other): <input type="text" name="phone"
+        value=""></p>
+    <p>How much would you like to donate?</p>
+    <script language="javascript">
+	for (i = 0; i < moneyList.length; i++)
+	{
+        if (i == 0)
+        {
+            document.write('&emsp;&emsp;&emsp;&emsp;&nbsp;');
+        }
+		document.write ('&emsp;' + moneyList[i] +
+            ':<input type="radio" name="amount" id="chk' + (i+1) + '" value="'
+            + moneyList[i] + '">');
+	}
+	</script>
+    <p>Or enter an amount in USD: $<input type="text" name="money" value="">
+    </p>
+    <p>Is this a weekly, monthly, yearly, or one-time payment?</p>
+    <p>Weekly: <input type="radio" name="time">
+    Monthly: <input type="radio" name="time">
+    Yearly: <input type="radio" name="time">
+    One-Time: <input type="radio" name="time"></p>
+    <p>Do have any special comments or suggestions that you would like us to
+        know?</p>
+    <input style="margin-left:7%; padding-bottom:100px; padding-right:50%" type="text"
+        value="">
+    <br>&nbsp;<br>
+    <input style="padding:10px; margin-left:7%" type="submit" id="submit"
+        value="Submit Donation Form">
+    </form>
+</body>
+
+<footer>
+    Barnum Humane Society &emsp;
+    419 Boston Ave. Medford, MA &emsp;
+    1-800-HUM-ANE
+</footer>
+
+</html>

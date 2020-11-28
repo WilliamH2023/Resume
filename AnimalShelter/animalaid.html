@@ -1,0 +1,154 @@
+<!-- animalaid.html
+Author: Julia McDowell, HTeamML
+Comp20 Fall 2020 Midterm  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barnum Humane Society</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="animals, humane society, animal aid, cats, dogs">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous">
+</script>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <style>
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){
+          #dropdown {display: inline;}
+          .mobileHide {display: none;}
+    </style>
+    <script type="text/javascript">
+
+        window.onload = function ()
+        {
+            dropdown = document.getElementById("dropdown");
+            dropdown_links = document.getElementById("dropdown-links");
+            dropdown.onclick = function ()
+            {
+                if (dropdown_links.style.display == "block"){
+                    dropdown_links.style.display = "none"
+                }
+                else{
+                    dropdown_links.style.display = "block"
+                }
+                return false;
+            }
+        }
+
+        $(document).ready (function()
+        {
+            $("#submit").click (function ()
+            {
+                $(".form1").slideToggle(1000);
+                $(".thanks").html("Thank you for your support! We will call to confirm your request shortly.");
+            })
+        })
+    </script>
+</head>
+
+<header> <center> <a class = "logo" href="index.html"> <img id = "logo" src="FinalLogo.png"> </a> </center> </header>
+<nav>
+    <!-- Mobile -->
+    <right>
+        <a id = "dropdown">
+            <i style = "font-size: 25px" class = "fa fa-bars"></i>
+        </a>
+    </right>
+    <!-- Mobile -->
+    <center>
+        <div class = mobileHide>
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About Us </a>
+            <a href="adopt.html"> Adopt </a>
+            <a href="foster.html"> Foster </a>
+            <a href="animalaid.html" class="currpage"> Animal Aid </a>
+            <a href="getinvolved.html"> Get Involved </a>
+            <a href="contact.html"> Contact Us </a>
+        </div>
+    </center>
+
+</nav>
+
+<body>
+
+    <!-- Mobile -->
+<div id = "dropdown-links" class="dropdown-links">
+    <a href="index.html"> Home </a>
+    <a href="about.html"> About Us </a>
+    <a href="adopt.html"> Adopt </a>
+    <a href="foster.html" > Foster </a>
+    <a href="animalaid.html"> Animal Aid </a>
+    <a href="getinvolved.html"> Get Involved </a>
+    <a href="contact.html"> Contact Us </a>
+</div>
+    <!-- Mobile -->
+  <h1> Welcome to our Animal Aid<br/>delivery service!</h1>
+    <div class = "about_contain">
+    <div class= "about_inside">
+  <h3> Owners of emotional support animals donate their time and animals to
+       support the shelter. All the proceeds from this program goes back into
+       the animals in our care. <br/> <br/>
+
+       If you feel the need for an animal companion, fill out the form below
+       to have the next available emotional support animal arrive at your door.
+  </h3>
+</div></div>
+  </div>
+
+  <table style = "width: 70%; margin: auto;">
+      <tr>
+          <td> <img class = "mobileHide" style = "width: 600px; height: 400px"
+                src="Foster Animal Images/support.jpg" alt=""> </td>
+          <td style = "text-align: left">
+
+                <div class="thanks" style = "width: 75%">
+                    &nbsp;
+                </div>
+                <form class = "form1" >
+                <table>
+
+                    <tr>
+                        <td style = "text-align: right" > Name:</td>
+                        <td style = "text-align: left"> <input type="text" id="name" value=""></td>
+                    </tr>
+                    <tr>
+                        <td style = "text-align: right" >Address:</td>
+                        <td style = "text-align: left"> <input type="text" id="age" value=""></td>
+                    </tr>
+                    <tr>
+                        <td style = "text-align: right" >Phone Number:</td>
+                        <td style = "text-align: left"> <input type="text" id = "email" value=""></td>
+                    </tr>
+                    <tr>
+                        <td style = "text-align: right" >Date of Visit?: </td>
+                        <td style = "text-align: left"> <input type="date" id="date" value=""></td>
+                    </tr>
+                    <tr>
+                        <td style = "text-align: right" >Time?: </td>
+                        <td style = "text-align: left"> <input type="time" id="date" value=""></td>
+                    </tr>
+                    <tr>
+                        <td style = "text-align: right" ><input type="button" id = "submit" value="Submit"></td>
+                    </tr>
+                </table>
+                </form>
+
+          </td>
+      </tr>
+  </table>
+  <br/><br/>
+
+
+
+</body>
+
+<footer>
+    Barnum Humane Society &emsp;
+    419 Boston Ave. Medford, MA &emsp;
+    1-800-HUM-ANE
+</footer>
+
+</html>

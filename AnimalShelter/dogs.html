@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="adopt, dogs">
+    <title>Adopt Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <style>
+    #animals {width:100%}
+    td {text-align: center}
+    img {padding: 20px}
+
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+      #dropdown {display: inline;}
+      .mobileHide {display: none;}
+
+    </style>
+    <script type="text/javascript">
+        window.onload = function ()
+        {
+            dropdown = document.getElementById("dropdown");
+            dropdown_links = document.getElementById("dropdown-links");
+            dropdown.onclick = function ()
+            {
+                if (dropdown_links.style.display == "block"){
+                    dropdown_links.style.display = "none"
+                }
+                else{
+                    dropdown_links.style.display = "block"
+                }
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<header> <center> <a class = "logo" href="index.html"> <img id = "logo" src="FinalLogo.png"> </a> </center> </header>
+<nav>
+    <!-- Mobile -->
+    <right>
+        <a id = "dropdown">
+            <i style = "font-size: 25px" class = "fa fa-bars"></i>
+        </a>
+    </right>
+    <!-- Mobile -->
+    <center>
+        <div class = mobileHide>
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About Us </a>
+            <a href="adopt.html" class="currpage"> Adopt </a>
+            <a href="foster.html"> Foster </a>
+            <a href="animalaid.html"> Animal Aid </a>
+            <a href="getinvolved.html"> Get Involved </a>
+            <a href="contact.html"> Contact Us </a>
+        </div>
+    </center>
+
+</nav>
+
+<body>
+
+    <!-- Mobile -->
+<div id = "dropdown-links" class="dropdown-links">
+    <a href="index.html"> Home </a>
+    <a href="about.html"> About Us </a>
+    <a href="adopt.html"> Adopt </a>
+    <a href="foster.html" class="currpage"> Foster </a>
+    <a href="animalaid.html"> Animal Aid </a>
+    <a href="getinvolved.html"> Get Involved </a>
+    <a href="contact.html"> Contact Us </a>
+</div>
+    <!-- Mobile -->
+
+    <h1>Adopt Dogs</h1>
+    <table class = "catdogbut">
+    <tr>
+        <td class = "catdogbuttd">
+            <div class = "aportal_cont">
+                <div class = "animal_portal">
+                    <a class = "species-link" href="cats.html"> Cats </a>
+                </div>
+            </div>
+        </td>
+        <td class = "catdogbuttd">
+            <div class = "aportal_cont">
+                <div class = "animal_portal">
+                    <a class = "species-link" href="dogs.html"> Dogs </a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </table>
+
+    <table class = "animals">
+        <tr>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/AlaskanMalamute.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Lucy </b> </div>
+                Alaskan Malamute <br/>
+                6 years old
+            </td>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/Beagle.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Daisy </b> </div>
+                Beagle <br/>
+                3 years old
+            </td>
+        </tr>
+        <tr>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/Bulldog.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Buddy </b></div>
+                Bulldog <br/>
+                5 years old
+            </td>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/Dachshund.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Bella </b></div>
+                Dachshund <br/>
+                4 years old
+            </td>
+        </tr>
+        <tr>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/GermanShepherd.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Max </b></div>
+                German Shepherd <br/>
+                7 years old
+            </td>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/GoldenRetriever.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Charlie </b> </div>
+                Golden Retriever <br/>
+                6 years old
+            </td>
+        </tr>
+        <tr>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/LabradorRetriever.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Teddy </b></div>
+                Labrador Retriever <br/>
+                9 years old
+            </td>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/PembrokeWelshCorgi.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Coco </b></div>
+                Pembroke Welsh Corgi <br/>
+                2 years old
+            </td>
+        </tr>
+        <tr>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/Poodle.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Molly </b></div>
+                Poodle <br/>
+                6 years old
+            </td>
+            <td> <img class = "animal" src="Foster Animal Images/dog_fosters/SiberianHusky.jpg">
+                <br>
+                <div style="color: #3E8EDE; font-family= Georgia "> <b> Archie </b> </div>
+                Siberian Husky <br/>
+                4 years old
+            </td>
+        </tr>
+    </table>
+</body>
+
+<footer>
+    Barnum Humane Society &emsp;
+    419 Boston Ave. Medford, MA &emsp;
+    1-800-HUM-ANE
+</footer>
+
+</html>

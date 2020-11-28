@@ -1,0 +1,149 @@
+<!-- index.html
+Author: Julia McDowell, HTeamML
+Comp20 Fall 2020 Midterm  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barnum Humane Society</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="foster, adopt, animals, humane society, animal aid, cats, dogs">
+    <style>
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){
+          #dropdown {display: inline;}
+          .mobileHide {display: none;}
+    </style>
+    <script type="text/javascript">
+        window.onload = function ()
+        {
+            dropdown = document.getElementById("dropdown");
+            dropdown_links = document.getElementById("dropdown-links");
+            dropdown.onclick = function ()
+            {
+                if (dropdown_links.style.display == "block"){
+                    dropdown_links.style.display = "none"
+                }
+                else{
+                    dropdown_links.style.display = "block"
+                }
+                return false;
+            }
+        }
+    </script>
+    <style>
+       .parallax {
+            background-image: url("Foster Animal Images/shelter.jpg");
+            min-height: 500px;
+            position: relative;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+       }
+       .checked {
+            color: #FFFFFF;
+       }
+
+   </style>
+</head>
+
+<header> <center> <a class = "logo" href="index.html"> <img id = "logo" src="FinalLogo.png"> </a> </center> </header>
+<nav>
+    <!-- Mobile -->
+    <right>
+        <a id = "dropdown">
+            <i style = "font-size: 25px" class = "fa fa-bars"></i>
+        </a>
+    </right>
+    <!-- Mobile -->
+    <center>
+        <div class = "mobileHide">
+            <a href="index.html"  class="currpage"> Home </a>
+            <a href="about.html"> About Us </a>
+            <a href="adopt.html"> Adopt </a>
+            <a href="foster.html"> Foster </a>
+            <a href="animalaid.html"> Animal Aid </a>
+            <a href="getinvolved.html"> Get Involved </a>
+            <a href="contact.html"> Contact Us </a>
+        </div>
+    </center>
+
+</nav>
+
+<body>
+
+    <!-- Mobile -->
+<div id = "dropdown-links" class="dropdown-links">
+    <a href="index.html"> Home </a>
+    <a href="about.html"> About Us </a>
+    <a href="adopt.html"> Adopt </a>
+    <a href="foster.html" class="currpage"> Foster </a>
+    <a href="animalaid.html"> Animal Aid </a>
+    <a href="getinvolved.html"> Get Involved </a>
+    <a href="contact.html"> Contact Us </a>
+</div>
+    <!-- Mobile -->
+
+<div class="parallax">
+    <div style="font-size: 30pt"> <br/> <br/> <br/> <br/> <br/> <br/> </div>
+    <a href="about.html" style="text-decoration: none;">
+        <h1 style = "text-align: center;color: #FFFFFF;"> Barnum Humane Society </h1>
+    </a>
+    <h2 style = "font:Georgia; font-size: 1.5em;text-align: center;color: #FFFFFF">
+        a non-profit animal shelter since 1869 <br/> <br/> <br/>
+    </h2>
+
+    <div style ="text-align: center;color: #FFFFFF">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span><br/>
+        "This place is incredible! I got my beautiful boy here in February.&emsp;&emsp;<br/>
+         Staff were so friendly, attentive and helpful! Definitely recommend it!"<br/>
+
+        <br/><br/>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span><br/>
+        "The Barnum Humane Society provides a loving environment for pets <br/>
+         who are awaiting adoption, and they absolutely excel at it!" &emsp;&emsp;&emsp;<br/>
+
+         <br/><br/>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span><br/>
+         "Facilities are clean, staff are courteous and knowledgeable, and of course,<br/>
+         their animals are great. We'd recommend this shelter without hesitation."&emsp;<br/>
+
+         <br/><br/>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span><br/>
+         "Great place! Adopted my dog last year from this shelter and the staff were<br/>
+         up front and honest about everything about the dog's medical needs and <br/>
+         her history. I would adopt another animal from them in a heartbeat!" &emsp; &emsp;<br/>
+    </div>
+    <div style="font-size: 30pt"> <br/> <br/> <br/> <br/> <br/> <br/> </div>
+
+</div>
+
+
+</body>
+
+<footer>
+    Barnum Humane Society &emsp;
+    419 Boston Ave. Medford, MA &emsp;
+    1-800-HUM-ANE
+</footer>
+
+</html>

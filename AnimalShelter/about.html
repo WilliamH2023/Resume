@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="foster, adopt, animals, humane society, animal aid, cats, dogs">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="StyleSheet.css">
+    <style>
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){
+          #dropdown {display: inline;}
+          .mobileHide {display: none;}
+    </style>
+    <script type="text/javascript">
+        window.onload = function ()
+        {
+            dropdown = document.getElementById("dropdown");
+            dropdown_links = document.getElementById("dropdown-links");
+            dropdown.onclick = function ()
+            {
+                if (dropdown_links.style.display == "block"){
+                    dropdown_links.style.display = "none";
+                }
+                else{
+                    dropdown_links.style.display = "block";
+                }
+                return false;
+            }
+        }
+    </script>
+</head>
+<header> <center> <a class = "logo" href="index.html"> <img id="logo" class = "logo" src="FinalLogo.png"> </a> </center> </header>
+
+<nav>
+    <!-- Mobile -->
+    <right>
+        <a id = "dropdown">
+            <i style = "font-size: 25px" class = "fa fa-bars"></i>
+        </a>
+    </right>
+    <!-- Mobile -->
+    <center>
+        <div class = mobileHide>
+            <a href="index.html"> Home </a>
+            <a href="about.html" class="currpage"> About Us </a>
+            <a href="adopt.html"> Adopt </a>
+            <a href="foster.html"> Foster </a>
+            <a href="animalaid.html"> Animal Aid </a>
+            <a href="getinvolved.html"> Get Involved </a>
+            <a href="contact.html"> Contact Us </a>
+        </div>
+    </center>
+
+</nav>
+
+<body>
+
+    <!-- Mobile -->
+<div id = "dropdown-links" class="dropdown-links">
+    <a href="index.html"> Home </a>
+    <a href="about.html"> About Us </a>
+    <a href="adopt.html"> Adopt </a>
+    <a href="foster.html" > Foster </a>
+    <a href="animalaid.html"> Animal Aid </a>
+    <a href="getinvolved.html"> Get Involved </a>
+    <a href="contact.html"> Contact Us </a>
+</div>
+    <!-- Mobile -->
+<h1>Who We Are</h1>
+<div class = "about_contain">
+    <div class= "about_inside">
+        <h2>A Family.</h2>
+        <p>Tufts Humane Society is a non-profit animal shelter located in Medford, Massachusetts that specializes in
+        the rescue and care of pets all around the Boston area. We take in pets who have
+        been born strays or abandoned by their owners and work to find them a loving
+        home where they can be happy. We were founded in 1869 by a single family who
+        took in a stray dog of their own and gave him a happy home. Realizing that they
+        wanted to give other people the same sense of joy and inclusion that they had
+        found in giving their dog a home, they grew the Tufts Humane Society piece by piece
+        until it's reached the point where it is today. </p>
+    </div>
+</div>
+<br/>
+
+<h1>Our Mission</h1>
+<div class = "about_contain">
+    <div class= "about_inside">
+        <h2>To provide a safe and loving home for all animals of all kinds.</h2>
+        <p> The Tufts Humane Society has dedicated itself to the rescue and adoption of all kinds of pets
+            into new families who have sworn to love and care for them. Although our
+            base and primary location is in the Medford-Somerville region, we support rescue efforts and
+            other allied animal shelters across several states. We stay in contact and
+            cooperate with animal control efforts to tell us when there are new stray
+            animals or ones in need of rescue. Our short term goal is to rescue and
+            safely adopt out as many abandoned and unwanted pets as possible, and to
+            ensure that they receive the loving homes they deserve. Our long term goal
+            is to support local legislation and rescue efforts that would increase
+            awareness and provide stricter laws for animal
+            safety and welfare. As an all-volunteer non-profit organization, 100% of
+            the money that we raise in donations goes directly to saving and
+            caring for our animals.
+        </p>
+    </div>
+</div>
+<br/>
+<h1>What You Can Do</h1>
+<div class= "about_contain">
+    <div class= "about_inside">
+        <h2>Volunteer, Foster, Donate, and more!</h2>
+        <p>
+        To learn more about donating to our organization, click on the "Donations"
+        tab on the navigation bar. If you would like to learn more about joining
+        our growing network of foster families or more about the adoption process,
+        please go to the "Contact Us" page. And if you think you're ready to adopt
+        a pet and would like to begin the process, please click on the "Adopt"
+        link. You can also follow us on any of our available social media accounts
+        if you'd like to stay updated regarding our mission, new pets up for
+        adoption, or how to sign up to be a foster family. And as always, thank you
+        so much for all of your time, money, and support provided by our wonderful
+        volunteers, generous donors, and loving foster and adoptive families.</p>
+    </div>
+</div>
+
+<footer>
+    Barnum Humane Society &emsp;
+    419 Boston Ave. Medford, MA &emsp;
+    1-800-HUM-ANE
+</footer>
+
+</body>
+
+
+
+</html>
