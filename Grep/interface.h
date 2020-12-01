@@ -4,11 +4,11 @@
 * By : William Huang
 * Completed : August 6, 2020
 *
-* Gerp Interface
-* Purpose : This header contains all helper functions of GERP and serves as 
-*           an interface of GERP. It mainly contains a hash table that stores
+* Grep Interface
+* Purpose : This header contains all helper functions of GREP and serves as 
+*           an interface of GREP. It mainly contains a hash table that stores
 *           word info, as well as vectors storing file directories and lines.
-*           Gerp supports word search and case_insensitive_search.
+*           Grep supports word search and case_insensitive_search.
 */
 
 #ifndef INTERFACE_H
