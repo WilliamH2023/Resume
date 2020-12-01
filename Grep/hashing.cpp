@@ -1,6 +1,5 @@
 /*
   hashing.cpp
-  matt russell
   An example from class using std::hash
 */
 
