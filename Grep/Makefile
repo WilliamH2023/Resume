@@ -5,7 +5,7 @@
 CXX=clang++
 CXXFLAGS=-std=c++11
 
-default: gerp
+default: grep
 
 gerp: word.o interface.o 
 	$(CXX) $(CXXFLAGS) word.o interface.o -o gerp
