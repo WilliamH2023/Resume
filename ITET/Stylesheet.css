@@ -1,0 +1,117 @@
+/************
+* Stylesheet.css
+* Author: HTeamML;
+* Comp20 Fall 2020 Final
+**************/
+
+header {
+    text-align: center;
+    font-family: "Jazz LET";
+    font-variant: small-caps;
+    font-size: 44px;
+    color: black;
+    text-decoration: underline;
+    background-color: #ADECFF;
+    padding: 35px 35px;
+}
+header a:visited {
+    color: black;
+}
+
+/*NAVIGATION */
+nav {
+    background-color: #778899;
+    font-size: 20px;
+    font-family: palatino;
+    text-decoration: none;
+    padding: 1% 2% 1% 1%;
+    overflow: hidden;
+}
+nav a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    padding: 1% 6% 1% 5%;
+    font-size: 80%;
+    font-family: palatino;
+}
+nav a.currpage {
+    color:black;
+    background-color: white;
+    border-radius: 25px;
+}
+.rightnav {
+    display: inline;
+    float: right;
+    text-align: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #FFD700;
+    text-decoration: none;
+    border-radius: 25px;
+}
+/*END NAVIGATION*/
+
+.login {
+    background-color: #D0D0D0;
+    color: black;
+    text-align:center;
+    border: 20px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    width: 50% ;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5px 10px 50px 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: "Jazz LET";
+    font-variant: small-caps;
+}
+.bod {
+    margin: 10px 10px 10px 10px;
+}
+h1 {
+    text-align:center;
+    font-family: Times New Roman;
+    font-variant: small-caps;
+}
+table {
+    width: 70%;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #778899;
+    color: #FFFFFF;
+    display:inline-block;
+    font-size: 15px;
+    font-family: palatino;
+    text-decoration: none;
+    padding: 1% 5% 1%;
+    height: 40px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
