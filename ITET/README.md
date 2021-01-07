@@ -7,6 +7,6 @@ Comp20 Final Site
 
 Team Member: Julia McDowell, Kyla Levin, Leon Taquet, William Huang
 
-* Demo: http://comp20-tufts.000webhostapp.com/ITET/login.html *
-* Username: demo                                              *
-* Password: demo                                              *
+* Demo: http://comp20-tufts.000webhostapp.com/ITET/login.html 
+* Username: demo                                              
+* Password: demo                                              
