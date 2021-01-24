@@ -2,7 +2,7 @@
 Comp20 Final Site
 
 * Webapp for tracking expenses in both local and home currency from trips for users
-* Mainly in charge of displaying trip-specific and user-specific expenses and managing data transfer among all pages
+* In charge of displaying trip-specific and user-specific expenses and managing data transfer among all pages
 * Built with HTML/CSS, JavaScript/JQuery, PHP, SQL, API
 
 Team Member: Julia McDowell, Kyla Levin, Leon Taquet, William Huang
